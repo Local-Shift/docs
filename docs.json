@@ -1,72 +1,99 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "LocalShift Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4A4F89",
+    "light": "#8A8FD1",
+    "dark": "#4A4F89"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Get started",
         "pages": [
           "index",
-          "quickstart"
+          "quickstart",
+          "get-started/install-extension",
+          "get-started/log-in"
+        ]
+      },
+      {
+        "group": "Chrome extension",
+        "pages": [
+          "extension/overview",
+          "extension/connect-facebook",
+          "extension/inventory",
+          "extension/facebook-groups",
+          "extension/status",
+          "extension/playbook"
+        ]
+      },
+      {
+        "group": "LocalShift dashboard",
+        "pages": [
+          "dashboard/overview",
+          "dashboard/inventory",
+          "dashboard/users",
+          "dashboard/approvals",
+          "dashboard/profile"
+        ]
+      },
+      {
+        "group": "Leads and growth",
+        "pages": [
+          "leads/marketplace-leads",
+          "leads/referral-program"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "troubleshooting/vehicles-not-posting",
+          "troubleshooting/extension-not-running",
+          "troubleshooting/facebook-account-issues",
+          "troubleshooting/cant-log-in"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "faq",
+          "contact-support"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://framerusercontent.com/images/dqzNh0xmPpRvMtw9SZwnLQ2Iyw.svg",
+    "dark": "https://framerusercontent.com/images/EB0Uh67XksN21sN6YRF8ei7gAI.svg",
+    "href": "https://localshift.io"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "mailto:support@localshift.io"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Log in",
+      "href": "https://app.localshift.io"
     }
   },
   "contextual": {
     "options": [
       "copy",
-      "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/local-shift",
+      "website": "https://localshift.io"
     }
   }
 }

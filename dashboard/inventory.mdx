@@ -42,6 +42,28 @@ The **Inventory** page shows every vehicle pulled in from your dealership's inve
 - Clear all filters with the reset button when you want to start over.
 - Use the search box to find a vehicle by stock number or VIN.
 
+## Choose which feed price to use
+
+Super admins can choose which price from a dealer's feed LocalShift syncs. LocalShift uses this price for Marketplace listings and every other channel. The **Inventory Price Source** settings only appear for locations whose inventory source is Homenet or DealersLink.
+
+<Steps>
+  <Step title="Open the location settings">
+    Edit the location, then expand **Inventory Configuration** > **Inventory Price Source**.
+  </Step>
+  <Step title="Pick the price">
+    Under **Price Source**, choose the price to use, such as **Feed default**, **Internet price**, or **MSRP**.
+  </Step>
+  <Step title="Choose which vehicles it applies to">
+    Under **Apply To**, choose all vehicles, new vehicles only, or used vehicles only.
+  </Step>
+  <Step title="Set the fallback">
+    Turn **Fall back to the feed default when empty** on to use the feed's default price when the chosen price is missing. With it off, a vehicle without the chosen price syncs with no price and does not post.
+  </Step>
+  <Step title="Save">
+    Save the location. LocalShift queues an inventory sync, and listings that are already live show as pending price updates.
+  </Step>
+</Steps>
+
 {/* tutorial:inventory-price-source start (managed by `library embed`; edits inside are overwritten) */}
 
 <video controls preload="metadata" className="w-full aspect-video rounded-xl" src="https://storage.googleapis.com/ls_video_tutorials/tutorials/inventory-price-source/inventory-price-source.mp4?v=20261102220124"></video>

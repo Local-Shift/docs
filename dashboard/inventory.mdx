@@ -44,14 +44,21 @@ The **Inventory** page shows every vehicle pulled in from your dealership's inve
 
 ## Choose which feed price to use
 
-Super admins can choose which price from a dealer's feed LocalShift syncs. LocalShift uses this price for Marketplace listings and every other channel. The **Inventory Price Source** settings only appear for locations whose inventory source is Homenet or DealersLink.
+Super admins can choose which price from a dealer's feed LocalShift syncs. LocalShift uses this price for Marketplace listings and every other channel. The **Inventory Price Source** settings only appear for locations whose inventory source is Homenet, DealersLink, eDealer, or vAuto.
 
 <Steps>
   <Step title="Open the location settings">
     Edit the location, then expand **Inventory Configuration** > **Inventory Price Source**.
   </Step>
   <Step title="Pick the price">
-    Under **Price Source**, choose the price to use, such as **Feed default**, **Internet price**, or **MSRP**.
+    Under **Price Source**, choose the price to use. The choices depend on the inventory source:
+
+    - **Homenet**: **Internet price**, **MSRP**, **Selling price**, and **Misc price 1** through **Misc price 5**
+    - **DealersLink**: **Internet price** and **MSRP**
+    - **eDealer**: **Regular price** and **Internet price**
+    - **vAuto**: **MSRP**
+
+    Choose **Feed default** to keep the price the feed sends by default.
   </Step>
   <Step title="Choose which vehicles it applies to">
     Under **Apply To**, choose all vehicles, new vehicles only, or used vehicles only.
